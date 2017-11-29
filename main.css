@@ -1,0 +1,129 @@
+body {
+  background-color:#4286f4;
+  background-image: image(boston.jpg);
+}
+
+
+div.container {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   grid-template-areas:
+    "header    header"
+    "main      aside"
+    "footer    footer";
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 2000px;
+}
+
+header {
+  background-color: #385789;
+  font-size: 60px;
+  text-align: center;
+  grid-area: header;
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 10px;
+  margin-top: 0px;
+
+}
+
+main {
+  background-color: #8b929e;
+  grid-area: main;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: 'Spectral SC', serif;
+  font-size: 14px;
+  
+}
+
+table {
+width: 100%
+
+}
+
+thead {
+font-size: 20px;
+padding: 10px;
+}
+
+tbody {
+font-size: 12px;
+}
+
+td{
+text-align: justify;
+}
+
+tr.home {
+  background-color: #cbcfd6;
+}
+
+tr.away{
+
+  }
+
+aside {
+  background-color: #505154;
+  grid-area: aside;
+  text-align: center;
+  text-shadow:14px;
+  font-size: 25px;
+  font-family: 'Spectral SC', serif;
+  max-width: 400px;
+  }
+
+
+footer {
+  background-color: #dbab8c;
+  grid-area: footer;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+ div.container {
+   grid-template-columns: 1fr;
+   grid-template-areas:
+    "header"
+    "main"
+    "aside"
+    "footer";
+  }
+}
+
+
+h1 {
+font-size: 20px;
+text-decoration: underline;
+text-align: center;
+}
+
+h2 {
+font-size: 15px;
+text-align: center;
+}
+
+p{
+line-height: 1.5;
+padding-left: 40px;
+padding-right: 40px;
+}
+
+ul{
+  font-size: 18px;
+  padding-bottom: 40px;
+
+
+}
+
+img {
+  max-width: 100%;
+  padding-right: 10px;
+  margin-bottom: 0px;
+}
+
+footer {
+  font-size: 18px;
+}
